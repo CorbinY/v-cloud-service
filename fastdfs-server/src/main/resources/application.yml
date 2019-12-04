@@ -1,0 +1,9 @@
+server:
+  port: 9377
+  servlet:
+    context-path: /v-cloud
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/v-cloud
