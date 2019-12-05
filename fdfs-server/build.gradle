@@ -1,0 +1,39 @@
+plugins {
+    id 'org.springframework.boot' version "$spring_boot_version"
+    id 'io.spring.dependency-management' version "$dependency_management_version"
+    id 'java'
+}
+
+configurations {
+    developmentOnly
+    runtimeClasspath {
+        extendsFrom developmentOnly
+    }
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+
+
+}
+
+dependencies {
+
+    compileOnly(boot_starter,boot_autoconfigure)
+    compile(google_guava, fastjson, lombock,snakeyaml)
+    annotationProcessor(lombock)
+    compileOnly(boot_starter, jettt_starter, mongodb_starter)
+    compileOnly(web_starter) {
+        exclude group: 'org.springframework.boot', module: 'spring-boot-starter-tomcat'
+    }
+    compile(fastdfs) {
+        exclude group: 'org.slf4j', module: 'slf4j-log4j12'
+    }
+
+    testImplementation(test_starter) {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+}
+
+test {
+    useJUnitPlatform()
+}

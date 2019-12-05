@@ -1,4 +1,4 @@
 rootProject.name = 'v-cloud-service'
 include('oauth-server')
-include('fastdfs-server')
+include('fdfs-server')
 

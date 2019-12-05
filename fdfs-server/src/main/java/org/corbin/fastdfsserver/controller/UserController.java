@@ -1,7 +1,7 @@
 package org.corbin.fastdfsserver.controller;
 
-import org.corbin.vcloud.response.ResponseResult;
-import org.corbin.vcloud.response.ResponseStatusEnum;
+import org.corbin.fastdfsserver.response.ResponseResult;
+import org.corbin.fastdfsserver.response.ResponseStatusEnum;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;

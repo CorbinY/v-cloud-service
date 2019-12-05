@@ -1,22 +1,23 @@
 plugins {
     id 'java'
 }
-
 group 'org.corbin'
 version '1.0-SNAPSHOT'
+apply from: "dependency.gradle"
 
-sourceCompatibility = 1.8
 
-repositories {
-    mavenLocal()
-    mavenCentral()
-}
+allprojects {
+    repositories {
+        mavenLocal()
+        //应该是maven私服，此处设置为ali的，地址是url
+        maven {
+            url "http://maven.aliyun.com/nexus/content/groups/public"
+        }
+        mavenCentral()
+    }
 
-dependencies {
-    compileOnly 'org.projectlombok:lombok'
-    annotationProcessor 'org.projectlombok:lombok'
-    compile 'com.alibaba:fastjson:1.2.62'
-    compile 'com.google.guava:guava:28.1-jre'
-    compile 'org.springframework.boot:spring-boot-starter-jetty:2.2.1.RELEASE'
-    testCompile 'junit:junit:4.12'
+    tasks.withType(JavaCompile) {
+        options.encoding = "UTF-8"
+    }
+    sourceCompatibility = 1.8
 }

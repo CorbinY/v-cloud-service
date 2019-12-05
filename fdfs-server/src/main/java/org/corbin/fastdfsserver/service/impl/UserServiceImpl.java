@@ -1,8 +1,8 @@
 package org.corbin.fastdfsserver.service.impl;
 
-import org.corbin.vcloud.model.User;
-import org.corbin.vcloud.repository.UserRepository;
-import org.corbin.vcloud.service.UserService;
+import org.corbin.fastdfsserver.model.User;
+import org.corbin.fastdfsserver.repository.UserRepository;
+import org.corbin.fastdfsserver.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

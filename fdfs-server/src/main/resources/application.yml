@@ -1,7 +1,7 @@
 server:
-  port: 9377
+  port: 9370
   servlet:
-    context-path: /v-cloud
+    context-path: /v-cloud/fdfs
 
 spring:
   data:

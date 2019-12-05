@@ -2,11 +2,11 @@ package org.corbin.fastdfsserver.config;
 
 import com.alibaba.fastjson.annotation.JSONField;
 import lombok.Getter;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
-@Configuration(value = "fastdfsConfig")
+/** @author xiesu */
+@Configuration("fastdfsConfig")
 @Getter
 @PropertySource(value = "fastdfs-client.properties")
 public class FastdfsProperties {
@@ -39,15 +39,15 @@ public class FastdfsProperties {
   @JSONField(name = "fastdfs.tracker_servers")
   private String trackerServers;
 
+  public FastdfsProperties() {}
 
-  public FastdfsProperties(){}
-  public FastdfsProperties(FastdfsProperties properties){
-    this.charset=properties.getCharset();
-    this.connectTimeOut=properties.getConnectTimeOut();
-    this.httpAntiStealToken=properties.getHttpAntiStealToken();
-    this.httpSecretToken=properties.getHttpSecretToken();
-    this.httpTrackerPort=properties.getHttpTrackerPort();
-    this.networkTimeOut=properties.getNetworkTimeOut();
-    this.trackerServers=properties.getTrackerServers();
+  public FastdfsProperties(FastdfsProperties properties) {
+    this.charset = properties.getCharset();
+    this.connectTimeOut = properties.getConnectTimeOut();
+    this.httpAntiStealToken = properties.getHttpAntiStealToken();
+    this.httpSecretToken = properties.getHttpSecretToken();
+    this.httpTrackerPort = properties.getHttpTrackerPort();
+    this.networkTimeOut = properties.getNetworkTimeOut();
+    this.trackerServers = properties.getTrackerServers();
   }
 }
