@@ -1,2 +1,2 @@
+rootProject.name('aoauth-server')
 includeFlat('basic-base')
-//project(':basic-base').projectDir =file('../basic-base')
