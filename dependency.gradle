@@ -1,35 +1,58 @@
 import org.codehaus.groovy.runtime.GStringImpl
 
+
 ext {
-    //版本号
-    spring_boot_version = "2.2.1.RELEASE"
-    dependency_management_version = "1.0.8.RELEASE"
+    //Dependencies version,定义局部变量
+    def fast_json_version = '1.2.62'
+    def snakeyaml_version = "1.25"
+    def lombok_version = '1.18.10'
+    def google_guava_version = '28.1-jre'
+    def fdfs_version = '1.27-SNAPSHOT'
+    def mysql_connector_version = "8.0.18"
 
 
-    //Dependencies version
-    fast_json_version = '1.2.62'
-    snakeyaml_version="1.25"
-    lombock_version = '1.18.10'
-    google_guava_version = '28.1-jre'
-    fastdfs_version = '1.27-SNAPSHOT'
-    jetty_starter_version = "$spring_boot_version" as GStringImpl
-    mongodb_starter_version = "$spring_boot_version" as GStringImpl
-    web_starter_version = "$spring_boot_version" as GStringImpl
-    boot_starter_version = "$spring_boot_version" as GStringImpl
-    test_starter_version = "$spring_boot_version" as GStringImpl
-    boot_autoconfigure_version="$spring_boot_version" as GStringImpl
+    def druid_starter_version = "1.1.21"
+
+
+    def jetty_starter_version = "$spring_boot_version"
+    def mongodb_starter_version = "$spring_boot_version"
+    def web_starter_version = "$spring_boot_version"
+    def boot_starter_version = "$spring_boot_version"
+    def test_starter_version = "$spring_boot_version"
+    def boot_autoconfigure_version = "$spring_boot_version"
+    def mail_starter_version = "$spring_boot_version"
+    def jpa_starter_version = "$spring_boot_version"
+    def redis_starter_version = "$spring_boot_version"
+    def boot_devtools_version = "$spring_boot_version"
+    def boot_configuration_processor_version = "$spring_boot_version"
+    def security_starter_version = "$spring_boot_version"
+    def security_oauth2_autoconfigure_version = "$spring_boot_version"
 
 
     //Dependencies
     fastjson = "com.alibaba:fastjson:$fast_json_version" as GStringImpl
-    snakeyaml="org.yaml:snakeyaml:$snakeyaml_version"
-    lombock = "org.projectlombok:lombok:$lombock_version" as GStringImpl
+    snakeyaml = "org.yaml:snakeyaml:$snakeyaml_version" as GStringImpl
+    lombok = "org.projectlombok:lombok:$lombok_version" as GStringImpl
     google_guava = "com.google.guava:guava:$google_guava_version" as GStringImpl
-    fastdfs = "org.csource:fastdfs-client-java:$fastdfs_version" as GStringImpl
+    fdfs = "org.csource:fastdfs-client-java:$fdfs_version" as GStringImpl
+    mysql_connector = "mysql:mysql-connector-java:$mysql_connector_version" as GStringImpl
+
+
+    druid_starter = "com.alibaba:druid-spring-boot-starter:$druid_starter_version" as GStringImpl
+
+
     jettt_starter = "org.springframework.boot:spring-boot-starter-jetty:$jetty_starter_version" as GStringImpl
     mongodb_starter = "org.springframework.boot:spring-boot-starter-data-mongodb:$mongodb_starter_version" as GStringImpl
-    web_starter = "org.springframework.boot:spring-boot-starter-web:$spring_boot_version" as GStringImpl
-    boot_starter = "org.springframework.boot:spring-boot-starter:$spring_boot_version" as GStringImpl
-    test_starter = "org.springframework.boot:spring-boot-starter-test:$spring_boot_version" as GStringImpl
-    boot_autoconfigure="org.springframework.boot:spring-boot-autoconfigure:$boot_autoconfigure_version" as GStringImpl
+    web_starter = "org.springframework.boot:spring-boot-starter-web:$web_starter_version" as GStringImpl
+    boot_starter = "org.springframework.boot:spring-boot-starter:$boot_starter_version" as GStringImpl
+    test_starter = "org.springframework.boot:spring-boot-starter-test:$test_starter_version" as GStringImpl
+    boot_autoconfigure = "org.springframework.boot:spring-boot-autoconfigure:$boot_autoconfigure_version" as GStringImpl
+    mail_starter = "org.springframework.boot:spring-boot-starter-mail:$mail_starter_version" as GStringImpl
+    jpa_starter = "org.springframework.boot:spring-boot-starter-data-jpa:$jpa_starter_version" as GStringImpl
+    redis_starter = "org.springframework.boot:spring-boot-starter-data-redis:$redis_starter_version" as GStringImpl
+    boot_devtools = "org.springframework.boot:spring-boot-devtools:$boot_devtools_version" as GStringImpl
+    boot_configuration_processor = "org.springframework.boot:spring-boot-configuration-processor:$boot_configuration_processor_version" as GStringImpl
+    security_starter = "org.springframework.boot:spring-boot-starter-security:$security_starter_version" as GStringImpl
+    security_oauth2_autoconfigure = "org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:$security_oauth2_autoconfigure_version" as GStringImpl
+
 }

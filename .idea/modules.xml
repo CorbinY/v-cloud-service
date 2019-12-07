@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/v-cloud-service.iml" filepath="$PROJECT_DIR$/.idea/modules/v-cloud-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/basic-base/v-cloud-service.basic-base.iml" filepath="$PROJECT_DIR$/.idea/modules/basic-base/v-cloud-service.basic-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/basic-base/v-cloud-service.basic-base.main.iml" filepath="$PROJECT_DIR$/.idea/modules/basic-base/v-cloud-service.basic-base.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/basic-base/v-cloud-service.basic-base.test.iml" filepath="$PROJECT_DIR$/.idea/modules/basic-base/v-cloud-service.basic-base.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fdfs-server/v-cloud-service.fdfs-server.iml" filepath="$PROJECT_DIR$/.idea/modules/fdfs-server/v-cloud-service.fdfs-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fdfs-server/v-cloud-service.fdfs-server.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fdfs-server/v-cloud-service.fdfs-server.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fdfs-server/v-cloud-service.fdfs-server.test.iml" filepath="$PROJECT_DIR$/.idea/modules/fdfs-server/v-cloud-service.fdfs-server.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/v-cloud-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/v-cloud-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/oauth-server/v-cloud-service.oauth-server.iml" filepath="$PROJECT_DIR$/.idea/modules/oauth-server/v-cloud-service.oauth-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/oauth-server/v-cloud-service.oauth-server.main.iml" filepath="$PROJECT_DIR$/.idea/modules/oauth-server/v-cloud-service.oauth-server.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/oauth-server/v-cloud-service.oauth-server.test.iml" filepath="$PROJECT_DIR$/.idea/modules/oauth-server/v-cloud-service.oauth-server.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/v-cloud-service.test.iml" filepath="$PROJECT_DIR$/.idea/modules/v-cloud-service.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tools-common/v-cloud-service.tools-common.iml" filepath="$PROJECT_DIR$/.idea/modules/tools-common/v-cloud-service.tools-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tools-common/v-cloud-service.tools-common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/tools-common/v-cloud-service.tools-common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tools-common/v-cloud-service.tools-common.test.iml" filepath="$PROJECT_DIR$/.idea/modules/tools-common/v-cloud-service.tools-common.test.iml" />
+    </modules>
+  </component>
+</project>

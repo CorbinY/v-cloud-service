@@ -1,0 +1,13 @@
+dependencies {
+    implementation(boot_starter)
+    implementation(mail_starter)
+    compile(lombok)
+    annotationProcessor(lombok)
+    testImplementation(test_starter) {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+}
+
+test {
+    useJUnitPlatform()
+}

@@ -1,13 +1,17 @@
-plugins {
-    id 'org.springframework.boot' version "$spring_boot_version"
-    id 'io.spring.dependency-management' version "$dependency_management_version"
-    id 'java'
-}
-
 dependencies {
+    compile project(':basic-base')
     implementation(boot_starter)
-    testImplementation(test_starter) {
-        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    implementation(jpa_starter)
+    implementation(druid_starter)
+    implementation(google_guava)
+    compile(mysql_connector)
+    compile(fastjson)
+    compileOnly(lombok)
+    annotationProcessor(lombok)
+    implementation(security_starter, security_oauth2_autoconfigure)
+    compileOnly(jettt_starter)
+    compileOnly(web_starter) {
+        exclude group: 'org.springframework.boot', module: 'spring-boot-starter-tomcat'
     }
 }
 
