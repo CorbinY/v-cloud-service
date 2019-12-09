@@ -1,5 +1,7 @@
 package org.corbin.basic.base.entity;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.corbin.tools.common.util.SnowFlakeIdHelper;
 
 import javax.persistence.GeneratedValue;
@@ -13,6 +15,8 @@ import java.io.Serializable;
  * @version 1.0
  * @date 19-12-5
  */
+@Getter
+@Setter
 @MappedSuperclass
 public abstract class AbstractEntity implements Serializable {
 

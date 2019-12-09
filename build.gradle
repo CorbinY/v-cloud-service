@@ -1,34 +1,9 @@
 plugins {
-    id "org.springframework.boot" version "$spring_boot_version" apply false
-    id 'io.spring.dependency-management' version "$dependency_management_version" apply false
+    id "org.springframework.boot" version "2.2.1.RELEASE"
+    id 'io.spring.dependency-management' version "1.0.8.RELEASE"
+    id 'java'
 }
 
-apply from: "dependency.gradle"
-allprojects {
-    group 'org.corbin'
-    version '1.0-SNAPSHOT'
-
-    apply plugin: 'java'
-
-    repositories {
-        mavenLocal()
-        maven { url "http://maven.aliyun.com/nexus/content/groups/public" }
-    }
-
-    tasks.withType(JavaCompile) {
-        options.encoding = "UTF-8"
-    }
-
-    sourceCompatibility = 1.8
-    targetCompatibility = 1.8
-
-}
-
-
-subprojects {
-    apply plugin: 'org.springframework.boot'
-    apply plugin: 'io.spring.dependency-management'
-
-}
-
+group 'org.corbin'
+version '1.0-SNAPSHOT'
 

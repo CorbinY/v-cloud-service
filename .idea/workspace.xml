@@ -2,59 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8cec904-44e3-4c67-a6d9-6af0d6f8c66a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/basic-base/src/main/java/org/corbin/basic/base/BasicBaseApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-base/src/main/java/org/corbin/basic/base/controller/AbstractController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-base/src/main/java/org/corbin/basic/base/entity/AbstractEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-base/src/main/java/org/corbin/basic/base/entity/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-base/src/main/java/org/corbin/basic/base/jpa/Auditor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-base/src/main/java/org/corbin/basic/base/jpa/BaseRepositoryFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-base/src/main/java/org/corbin/basic/base/jpa/BaseRepositoryFactoryBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-base/src/main/java/org/corbin/basic/base/jpa/JpaBaseConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-base/src/main/java/org/corbin/basic/base/repository/BaseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-base/src/main/java/org/corbin/basic/base/repository/impl/BaseRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-base/src/main/java/org/corbin/basic/base/service/BaseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-base/src/main/java/org/corbin/basic/base/service/impl/BaseServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oauth-server/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oauth-server/src/main/java/org/corbin/oauth/server/auth/bean/UserLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oauth-server/src/main/java/org/corbin/oauth/server/auth/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oauth-server/src/main/java/org/corbin/oauth/server/auth/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oauth-server/src/main/java/org/corbin/oauth/server/auth/handler/LoginSuccessHander.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oauth-server/src/main/java/org/corbin/oauth/server/auth/service/LoginServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oauth-server/src/main/java/org/corbin/oauth/server/entity/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oauth-server/src/main/java/org/corbin/oauth/server/repository/AccountRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oauth-server/src/main/java/org/corbin/oauth/server/service/AccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oauth-server/src/main/java/org/corbin/oauth/server/service/impl/AccountServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools-common/src/main/java/org/corbin/tools/common/ToolsCommonApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools-common/src/main/java/org/corbin/tools/common/context/SpringBeanContextAware.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools-common/src/main/java/org/corbin/tools/common/util/InitializeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools-common/src/main/java/org/corbin/tools/common/util/MailUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools-common/src/main/java/org/corbin/tools/common/util/Md5Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools-common/src/main/java/org/corbin/tools/common/util/PatternUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools-common/src/main/java/org/corbin/tools/common/util/SnowFlakeIdHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-base/settings.gradle_" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fdfs-server/settings.gradle_" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-server/settings.gradle_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0-rc-3/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0-rc-3/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0-rc-3/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileContent/annotation-processors.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/jarAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-base/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/basic-base/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-base/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-base/src/main/java/org/corbin/basic/base/entity/AbstractEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-base/src/main/java/org/corbin/basic/base/entity/AbstractEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-base/src/main/java/org/corbin/basic/base/jpa/BaseRepositoryFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-base/src/main/java/org/corbin/basic/base/jpa/BaseRepositoryFactoryBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-base/src/main/java/org/corbin/basic/base/jpa/JpaBaseConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-base/src/main/java/org/corbin/basic/base/repository/BaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-base/src/main/java/org/corbin/basic/base/repository/BaseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-base/src/main/java/org/corbin/basic/base/repository/impl/BaseRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-base/src/main/java/org/corbin/basic/base/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-base/src/main/java/org/corbin/basic/base/service/BaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-base/src/main/java/org/corbin/basic/base/service/impl/BaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-base/src/main/java/org/corbin/basic/base/service/impl/BaseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-base/src/main/resources/application.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependency.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependency.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependency.gradle" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/fdfs-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/fdfs-server/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdfs-server/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/fdfs-server/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdfs-server/src/main/java/org/corbin/fastdfsserver/FastdfsServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/fdfs-server/src/main/java/org/corbin/fdfs/server/FastdfsServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdfs-server/src/main/java/org/corbin/fastdfsserver/config/FastdfsInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/fdfs-server/src/main/java/org/corbin/fdfs/server/config/FastdfsInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdfs-server/src/main/java/org/corbin/fastdfsserver/config/FastdfsProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/fdfs-server/src/main/java/org/corbin/fdfs/server/config/FastdfsProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdfs-server/src/main/java/org/corbin/fastdfsserver/context/SpringBeanContextAware.java" beforeDir="false" afterPath="$PROJECT_DIR$/fdfs-server/src/main/java/org/corbin/fdfs/server/context/SpringBeanContextAware.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdfs-server/src/main/java/org/corbin/fastdfsserver/controller/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/fdfs-server/src/main/java/org/corbin/fdfs/server/controller/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdfs-server/src/main/java/org/corbin/fastdfsserver/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fdfs-server/src/main/java/org/corbin/fdfs/server/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdfs-server/src/main/java/org/corbin/fastdfsserver/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/fdfs-server/src/main/java/org/corbin/fdfs/server/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdfs-server/src/main/java/org/corbin/fastdfsserver/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/fdfs-server/src/main/java/org/corbin/fdfs/server/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdfs-server/src/main/java/org/corbin/fastdfsserver/response/ResponseResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/fdfs-server/src/main/java/org/corbin/fdfs/server/response/ResponseResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdfs-server/src/main/java/org/corbin/fastdfsserver/response/ResponseStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/fdfs-server/src/main/java/org/corbin/fdfs/server/response/ResponseStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdfs-server/src/main/java/org/corbin/fastdfsserver/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/fdfs-server/src/main/java/org/corbin/fdfs/server/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdfs-server/src/main/java/org/corbin/fastdfsserver/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/fdfs-server/src/main/java/org/corbin/fdfs/server/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdfs-server/src/test/java/org/corbin/fastdfsserver/FastdfsServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/fdfs-server/src/test/java/org/corbin/fdfs/server/FastdfsServerApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs-server/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oauth-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/oauth-server/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth-server/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/oauth-server/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth-server/src/main/java/org/corbin/oauthserver/OauthServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth-server/src/main/java/org/corbin/oauth/server/OauthServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/oauth-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth-server/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth-server/src/main/java/org/corbin/oauth/server/OauthServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth-server/src/main/java/org/corbin/oauth/server/OauthServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth-server/src/main/java/org/corbin/oauth/server/repository/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth-server/src/main/java/org/corbin/oauth/server/repository/AccountRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth-server/src/main/java/org/corbin/oauth/server/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth-server/src/main/java/org/corbin/oauth/server/service/impl/AccountServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools-common/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/tools-common/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools-common/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/tools-common/settings.gradle_" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,12 +124,23 @@
         <task path="$PROJECT_DIR$/tools-common">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/fdfs-server">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/oauth-server">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="v-cloud-service" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="v-cloud-service" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -174,6 +183,56 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="v-cloud-service" type="f1a62948:ProjectNode" />
                 <item name="basic-base" type="2d1252cf:ModuleNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="org.springframework.boot:spring-boot-starter-data-jpa:2.2.1.RELEASE" type="cfea851d:ExternalSystemViewDefaultContributor$LibraryDependencyDataExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="v-cloud-service" type="f1a62948:ProjectNode" />
+                <item name="basic-base" type="2d1252cf:ModuleNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="org.springframework.boot:spring-boot-starter-data-jpa:2.2.1.RELEASE" type="cfea851d:ExternalSystemViewDefaultContributor$LibraryDependencyDataExternalSystemNode" />
+                <item name="org.springframework.boot:spring-boot-starter-aop:2.2.1.RELEASE" type="cfea851d:ExternalSystemViewDefaultContributor$LibraryDependencyDataExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="v-cloud-service" type="f1a62948:ProjectNode" />
+                <item name="basic-base" type="2d1252cf:ModuleNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="org.springframework.boot:spring-boot-starter-data-jpa:2.2.1.RELEASE" type="cfea851d:ExternalSystemViewDefaultContributor$LibraryDependencyDataExternalSystemNode" />
+                <item name="org.springframework.boot:spring-boot-starter-jdbc:2.2.1.RELEASE" type="cfea851d:ExternalSystemViewDefaultContributor$LibraryDependencyDataExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="v-cloud-service" type="f1a62948:ProjectNode" />
+                <item name="basic-base" type="2d1252cf:ModuleNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="org.springframework.boot:spring-boot-starter-data-jpa:2.2.1.RELEASE" type="cfea851d:ExternalSystemViewDefaultContributor$LibraryDependencyDataExternalSystemNode" />
+                <item name="org.springframework.boot:spring-boot-starter-jdbc:2.2.1.RELEASE" type="cfea851d:ExternalSystemViewDefaultContributor$LibraryDependencyDataExternalSystemNode" />
+                <item name="org.springframework:spring-jdbc:5.2.1.RELEASE" type="cfea851d:ExternalSystemViewDefaultContributor$LibraryDependencyDataExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="v-cloud-service" type="f1a62948:ProjectNode" />
+                <item name="basic-base" type="2d1252cf:ModuleNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="org.springframework.boot:spring-boot-starter-data-jpa:2.2.1.RELEASE" type="cfea851d:ExternalSystemViewDefaultContributor$LibraryDependencyDataExternalSystemNode" />
+                <item name="org.springframework.data:spring-data-jpa:2.2.1.RELEASE" type="cfea851d:ExternalSystemViewDefaultContributor$LibraryDependencyDataExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="v-cloud-service" type="f1a62948:ProjectNode" />
+                <item name="basic-base" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
@@ -186,25 +245,123 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="v-cloud-service" type="f1a62948:ProjectNode" />
-                <item name="tools-common" type="2d1252cf:ModuleNode" />
+                <item name="fdfs-server" type="2d1252cf:ModuleNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="v-cloud-service" type="f1a62948:ProjectNode" />
-                <item name="tools-common" type="2d1252cf:ModuleNode" />
+                <item name="fdfs-server" type="2d1252cf:ModuleNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="v-cloud-service" type="f1a62948:ProjectNode" />
+                <item name="fdfs-server" type="2d1252cf:ModuleNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="v-cloud-service" type="f1a62948:ProjectNode" />
+                <item name="fdfs-server" type="2d1252cf:ModuleNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="v-cloud-service" type="f1a62948:ProjectNode" />
+                <item name="fdfs-server" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="v-cloud-service" type="f1a62948:ProjectNode" />
-                <item name="tools-common" type="2d1252cf:ModuleNode" />
+                <item name="fdfs-server" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="v-cloud-service" type="f1a62948:ProjectNode" />
+                <item name="oauth-server" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="v-cloud-service" type="f1a62948:ProjectNode" />
+                <item name="oauth-server" type="2d1252cf:ModuleNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="v-cloud-service" type="f1a62948:ProjectNode" />
+                <item name="oauth-server" type="2d1252cf:ModuleNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="v-cloud-service" type="f1a62948:ProjectNode" />
+                <item name="oauth-server" type="2d1252cf:ModuleNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="v-cloud-service" type="f1a62948:ProjectNode" />
+                <item name="oauth-server" type="2d1252cf:ModuleNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="org.springframework.boot:spring-boot-starter-web:2.2.1.RELEASE" type="cfea851d:ExternalSystemViewDefaultContributor$LibraryDependencyDataExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="v-cloud-service" type="f1a62948:ProjectNode" />
+                <item name="oauth-server" type="2d1252cf:ModuleNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="org.springframework.boot:spring-boot-starter-web:2.2.1.RELEASE" type="cfea851d:ExternalSystemViewDefaultContributor$LibraryDependencyDataExternalSystemNode" />
+                <item name="org.springframework.boot:spring-boot-starter-json:2.2.1.RELEASE" type="cfea851d:ExternalSystemViewDefaultContributor$LibraryDependencyDataExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="v-cloud-service" type="f1a62948:ProjectNode" />
+                <item name="oauth-server" type="2d1252cf:ModuleNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="org.springframework.boot:spring-boot-starter-web:2.2.1.RELEASE" type="cfea851d:ExternalSystemViewDefaultContributor$LibraryDependencyDataExternalSystemNode" />
+                <item name="org.springframework.boot:spring-boot-starter-validation:2.2.1.RELEASE" type="cfea851d:ExternalSystemViewDefaultContributor$LibraryDependencyDataExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="v-cloud-service" type="f1a62948:ProjectNode" />
+                <item name="oauth-server" type="2d1252cf:ModuleNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="com.alibaba:druid-spring-boot-starter:1.1.21" type="cfea851d:ExternalSystemViewDefaultContributor$LibraryDependencyDataExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="v-cloud-service" type="f1a62948:ProjectNode" />
+                <item name="oauth-server" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="v-cloud-service" type="f1a62948:ProjectNode" />
+                <item name="oauth-server" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="application" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="v-cloud-service" type="f1a62948:ProjectNode" />
-                <item name="tools-common" type="2d1252cf:ModuleNode" />
+                <item name="oauth-server" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
               </path>
@@ -212,29 +369,19 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="v-cloud-service" type="f1a62948:ProjectNode" />
                 <item name="tools-common" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="documentation" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="v-cloud-service" type="f1a62948:ProjectNode" />
                 <item name="tools-common" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="help" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="v-cloud-service" type="f1a62948:ProjectNode" />
                 <item name="tools-common" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="other" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="v-cloud-service" type="f1a62948:ProjectNode" />
-                <item name="tools-common" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="verification" type="c8890929:TasksNode$1" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -251,6 +398,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1UV6KdXx9gIOYqefQm5YcRoe4if" />
@@ -265,6 +417,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -272,28 +425,28 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/basic-base/src/main/java/org/corbin/basic/base/repository" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tools-common" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/fastdfs-server/src/main/resources" />
-      <recent name="$PROJECT_DIR$/fastdfs-server/src/main/resources/org/corbin/fastdfsserver/config" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tools-common" />
+      <recent name="$PROJECT_DIR$/basic-base/src/main/java/org/corbin/basic/base/repository" />
+      <recent name="$PROJECT_DIR$/basic-base/src/main/java/org/corbin/basic/base/jpa" />
+      <recent name="$PROJECT_DIR$/basic-base/src/main/java/org/corbin/basicbase" />
+      <recent name="$PROJECT_DIR$/oauth-server" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.corbin.basic.base" />
       <recent name="org.corbin.tools.common" />
       <recent name="org.corbin.basicbase.context" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/basic-base/src/main/java/org/corbin/basic/base/repository" />
-      <recent name="$PROJECT_DIR$/basic-base/src/main/java/org/corbin/basic/base/jpa" />
-      <recent name="$PROJECT_DIR$/basic-base/src/main/java/org/corbin/basicbase" />
-      <recent name="$PROJECT_DIR$/oauth-server" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/fastdfs-server/src/main/resources" />
+      <recent name="$PROJECT_DIR$/fastdfs-server/src/main/resources/org/corbin/fastdfsserver/config" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -317,8 +470,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.v-cloud-service:basic-base [jar]">
-    <configuration name="v-cloud-service [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Spring Boot.OauthServerApplication">
+    <configuration name="v-cloud-service [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -329,7 +482,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="jar" />
+            <option value="clean" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -337,10 +490,10 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="v-cloud-service:basic-base [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="v-cloud-service:fdfs-server [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/basic-base" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/fdfs-server" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -356,10 +509,10 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="v-cloud-service:tools-common [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="v-cloud-service:oauth-server [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/tools-common" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/oauth-server" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -367,7 +520,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="assemble" />
+            <option value="jar" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -394,27 +547,8 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="v-cloud-service:tools-common [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/tools-common" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="buildDependents" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="BasicBaseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="v-cloud-service.basic-base.main" />
+      <module name="IdeaProjects.v-cloud-service.basic-base.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.corbin.basic.base.BasicBaseApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -434,33 +568,49 @@
       </method>
     </configuration>
     <configuration name="FastdfsServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="v-cloud-service.fdfs-server.main" />
+      <module name="IdeaProjects.v-cloud-service.fdfs-server.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.corbin.fdfs.server.FastdfsServerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OauthServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="v-cloud-service.oauth-server.main" />
+    <configuration name="OauthServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="IdeaProjects.v-cloud-service.oauth-server.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.corbin.oauth.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.corbin.oauth.server.OauthServerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="ToolsCommonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="org.corbin.v-cloud-service.tools-common.main" />
+      <module name="IdeaProjects.v-cloud-service.tools-common.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.corbin.tools.common.ToolsCommonApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Gradle.v-cloud-service:tools-common [bootJar]" />
+      <item itemvalue="Gradle.v-cloud-service:fdfs-server [jar]" />
+      <item itemvalue="Gradle.v-cloud-service:oauth-server [jar]" />
+      <item itemvalue="Gradle.v-cloud-service [clean]" />
+      <item itemvalue="Spring Boot.BasicBaseApplication" />
+      <item itemvalue="Spring Boot.FastdfsServerApplication" />
+      <item itemvalue="Spring Boot.ToolsCommonApplication" />
+      <item itemvalue="Spring Boot.OauthServerApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.v-cloud-service:basic-base [jar]" />
-        <item itemvalue="Gradle.v-cloud-service [jar]" />
-        <item itemvalue="Gradle.v-cloud-service:tools-common [buildDependents]" />
+        <item itemvalue="Spring Boot.OauthServerApplication" />
+        <item itemvalue="Gradle.v-cloud-service [clean]" />
+        <item itemvalue="Gradle.v-cloud-service:oauth-server [jar]" />
+        <item itemvalue="Gradle.v-cloud-service:fdfs-server [jar]" />
         <item itemvalue="Gradle.v-cloud-service:tools-common [bootJar]" />
-        <item itemvalue="Gradle.v-cloud-service:tools-common [assemble]" />
       </list>
     </recent_temporary>
   </component>
@@ -468,16 +618,12 @@
     <option name="viewStates">
       <list>
         <serviceView>
+          <option name="contentProportion" value="0.120061964" />
           <treeState>
             <expand>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Not Started" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -503,7 +649,10 @@
       <workItem from="1575524510650" duration="16986000" />
       <workItem from="1575595208960" duration="11986000" />
       <workItem from="1575614787967" duration="11367000" />
-      <workItem from="1575681382339" duration="13836000" />
+      <workItem from="1575681382339" duration="27776000" />
+      <workItem from="1575855056280" duration="21000" />
+      <workItem from="1575855099324" duration="8747000" />
+      <workItem from="1575870224042" duration="1485000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1575440559631</created>
@@ -519,7 +668,21 @@
       <option name="project" value="LOCAL" />
       <updated>1575510644728</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="使用gradle统一版本管理依赖失败,&#10;父build.gradle无法向子build中导入插件|依赖&#10;拉取develop分之,不适用统一版本管理">
+      <created>1575701690167</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1575701690167</updated>
+    </task>
+    <task id="LOCAL-00004" summary="使用gradle统一版本管理依赖失败,&#10;父build.gradle无法向子build中导入插件|依赖&#10;拉取develop分之,不适用统一版本管理">
+      <created>1575702477147</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575702477147</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,13 +690,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="使用gradle统一版本管理依赖失败,&#10;父build.gradle无法向子build中导入插件|依赖&#10;拉取develop分之,不适用统一版本管理" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用gradle统一版本管理依赖失败,&#10;父build.gradle无法向子build中导入插件|依赖&#10;拉取develop分之,不适用统一版本管理" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="282" y="39" key="#Assign_Data_Sources" timestamp="1575611606564">
+    <state x="282" y="39" key="#Assign_Data_Sources" timestamp="1575709807545">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="282" y="39" key="#Assign_Data_Sources/0.0.1366.768@0.0.1366.768" timestamp="1575611606564" />
+    <state x="282" y="39" key="#Assign_Data_Sources/0.0.1366.768@0.0.1366.768" timestamp="1575709807545" />
     <state x="335" y="5" key="#FastdfsServerApplication_(1)" timestamp="1575509294581">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -546,14 +710,18 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="282" y="39" key="#Project_Structure/0.0.1366.768@0.0.1366.768" timestamp="1575699032382" />
-    <state x="146" y="36" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575687186219">
+    <state x="146" y="36" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575857869488">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="146" y="36" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1575687186219" />
-    <state x="495" y="90" width="821" height="587" key="#com.intellij.ide.util.MemberChooser" timestamp="1575603532703">
+    <state x="146" y="36" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1575857869488" />
+    <state x="495" y="90" width="821" height="587" key="#com.intellij.ide.util.MemberChooser" timestamp="1575710965656">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="495" y="90" width="821" height="587" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1575603532703" />
+    <state x="495" y="90" width="821" height="587" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1575710965656" />
+    <state x="370" y="107" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575855065014">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="370" y="107" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.768@0.0.1366.768" timestamp="1575855065014" />
     <state x="503" y="306" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1575528704467">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -562,10 +730,14 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="420" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1575456702955" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1575701447473">
+    <state x="285" y="0" key="CommitChangelistDialog2" timestamp="1575871723608">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1575701447473" />
+    <state x="285" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1575871723608" />
+    <state x="136" y="68" key="DiffContextDialog" timestamp="1575702491113">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="136" y="68" key="DiffContextDialog/0.0.1366.768@0.0.1366.768" timestamp="1575702491113" />
     <state x="0" y="66" key="FileDocumentManager.FileCacheConflict" timestamp="1575429617193">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -578,66 +750,70 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="357" y="83" key="Github.UntrackedFilesDialog/0.0.1366.768@0.0.1366.768" timestamp="1575440497068" />
-    <state width="1320" height="180" key="GridCell.Tab.0.bottom" timestamp="1575700119768">
+    <state width="1135" height="236" key="GridCell.Tab.0.bottom" timestamp="1575863522765">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1320" height="180" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1575700119768" />
-    <state width="1320" height="180" key="GridCell.Tab.0.center" timestamp="1575700119768">
+    <state width="1135" height="236" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1575863522765" />
+    <state width="1135" height="236" key="GridCell.Tab.0.center" timestamp="1575863522764">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1320" height="180" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1575700119768" />
-    <state width="1320" height="180" key="GridCell.Tab.0.left" timestamp="1575700119767">
+    <state width="1135" height="236" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1575863522764" />
+    <state width="1135" height="236" key="GridCell.Tab.0.left" timestamp="1575863522764">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1320" height="180" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1575700119767" />
-    <state width="1320" height="180" key="GridCell.Tab.0.right" timestamp="1575700119768">
+    <state width="1135" height="236" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1575863522764" />
+    <state width="1135" height="236" key="GridCell.Tab.0.right" timestamp="1575863522765">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1320" height="180" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1575700119768" />
-    <state width="1320" height="145" key="GridCell.Tab.1.bottom" timestamp="1575628981364">
+    <state width="1135" height="236" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1575863522765" />
+    <state width="1135" height="236" key="GridCell.Tab.1.bottom" timestamp="1575863522767">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1320" height="145" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1575628981364" />
-    <state width="1320" height="145" key="GridCell.Tab.1.center" timestamp="1575628981364">
+    <state width="1135" height="236" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1575863522767" />
+    <state width="1135" height="236" key="GridCell.Tab.1.center" timestamp="1575863522766">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1320" height="145" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1575628981364" />
-    <state width="1320" height="145" key="GridCell.Tab.1.left" timestamp="1575628981363">
+    <state width="1135" height="236" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1575863522766" />
+    <state width="1135" height="236" key="GridCell.Tab.1.left" timestamp="1575863522766">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1320" height="145" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1575628981363" />
-    <state width="1320" height="145" key="GridCell.Tab.1.right" timestamp="1575628981364">
+    <state width="1135" height="236" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1575863522766" />
+    <state width="1135" height="236" key="GridCell.Tab.1.right" timestamp="1575863522766">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1320" height="145" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1575628981364" />
+    <state width="1135" height="236" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1575863522766" />
     <state width="220" height="477" key="HiddenNamespacesPopup" timestamp="1575540679898">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="220" height="477" key="HiddenNamespacesPopup/0.0.1366.768@0.0.1366.768" timestamp="1575540679898" />
-    <state x="191" y="0" key="SettingsEditor" timestamp="1575701344160">
+    <state x="270" y="95" key="IDE.errors.dialog" timestamp="1575856688838">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="191" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1575701344160" />
-    <state x="282" y="114" key="Vcs.Push.Dialog.v2" timestamp="1575511048954">
+    <state x="270" y="95" key="IDE.errors.dialog/0.0.1366.768@0.0.1366.768" timestamp="1575856688838" />
+    <state x="191" y="0" key="SettingsEditor" timestamp="1575857155771">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="282" y="114" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1575511048954" />
-    <state x="376" y="211" key="com.intellij.ide.util.TipDialog" timestamp="1575510425362">
+    <state x="191" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1575857155771" />
+    <state x="282" y="114" key="Vcs.Push.Dialog.v2" timestamp="1575702553909">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="376" y="211" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1575510425362" />
-    <state x="0" y="0" width="793" height="768" key="find.popup" timestamp="1575517512584">
+    <state x="282" y="114" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1575702553909" />
+    <state x="376" y="211" key="com.intellij.ide.util.TipDialog" timestamp="1575870224312">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="0" y="0" width="793" height="768" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1575517512584" />
+    <state x="376" y="211" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1575870224312" />
+    <state x="0" y="0" width="860" height="768" key="find.popup" timestamp="1575871191025">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="0" y="0" width="860" height="768" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1575871191025" />
     <state x="125" y="114" key="new project wizard" timestamp="1575624788908">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="125" y="114" key="new project wizard/0.0.1366.768@0.0.1366.768" timestamp="1575624788908" />
-    <state x="346" y="166" width="672" height="677" key="run.anything.popup" timestamp="1575698214636">
+    <state x="346" y="166" width="672" height="677" key="run.anything.popup" timestamp="1575711316248">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="346" y="166" width="672" height="677" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1575698214636" />
+    <state x="346" y="166" width="672" height="677" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1575711316248" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1575700375157">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

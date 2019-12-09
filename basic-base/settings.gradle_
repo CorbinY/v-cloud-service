@@ -1,0 +1,2 @@
+rootProject.name='basic-base'
+includeFlat('tools-common')

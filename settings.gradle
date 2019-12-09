@@ -1,5 +1,5 @@
 rootProject.name = 'v-cloud-service'
-include(':oauth-server')
-include(':fdfs-server')
-include(':basic-base')
-include(':tools-common')
+include('oauth-server')
+include('fdfs-server')
+include('basic-base')
+include('tools-common')

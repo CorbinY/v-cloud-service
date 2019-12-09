@@ -2,6 +2,8 @@ package org.corbin.oauth.server.repository;
 
 import org.corbin.basic.base.repository.BaseRepository;
 import org.corbin.oauth.server.entity.Account;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
@@ -10,7 +12,9 @@ import java.util.Optional;
  * @version 1.0
  * @date 19-12-5
  */
+@Repository
 public interface AccountRepository extends BaseRepository<Account, Long> {
+
   Optional<Account> findByAccountId(String accountId);
 
   Optional<Account> findByAccountMail(String accountMail);

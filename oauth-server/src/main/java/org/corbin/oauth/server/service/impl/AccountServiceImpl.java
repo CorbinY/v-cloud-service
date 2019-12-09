@@ -16,8 +16,13 @@ import org.springframework.util.Assert;
  * @date 19-12-5
  */
 @Service
-public class AccountServiceImpl extends BaseServiceImpl implements AccountService {
-  @Autowired private AccountRepository accountRepository;
+public class AccountServiceImpl extends BaseServiceImpl<Account, Long> implements AccountService {
+  private final AccountRepository accountRepository;
+
+  AccountServiceImpl(AccountRepository accountRepository) {
+    super(accountRepository);
+    this.accountRepository = accountRepository;
+  }
 
   @Override
   public Account findLoginAccount(@NonNull String emailOrTel) {

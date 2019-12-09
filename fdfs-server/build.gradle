@@ -1,3 +1,21 @@
+plugins {
+    id "org.springframework.boot"
+    id 'io.spring.dependency-management'
+    id 'java'
+}
+
+
+group 'org.corbin'
+version '1.0-SNAPSHOT'
+
+bootJar.enabled(true)
+jar.enabled(true)
+
+repositories {
+    mavenLocal()
+    maven { url "http://maven.aliyun.com/nexus/content/groups/public" }
+}
+
 configurations {
     developmentOnly
     runtimeClasspath {
@@ -12,22 +30,24 @@ configurations {
 
 dependencies {
 
-    compileOnly(boot_starter)
-    compileOnly(boot_autoconfigure)
-    compile("$google_guava")
-    compile(snakeyaml)
-    compile(fastjson)
-    compileOnly(lombok)
-    annotationProcessor("${lombok}")
-    compileOnly(boot_starter, jettt_starter, mongodb_starter)
-    compileOnly(web_starter) {
+    compile(group: 'org.springframework.boot', name: 'spring-boot-starter', version: '2.2.1.RELEASE')
+    compile group: 'org.springframework.boot', name: 'spring-boot-autoconfigure', version: '2.2.1.RELEASE'
+    compile group: 'com.google.guava', name: 'guava', version: '28.1-jre'
+    compile group: 'org.yaml', name: 'snakeyaml', version: '1.25'
+    compile group: 'com.alibaba', name: 'fastjson', version: '1.2.62'
+    compileOnly(group: 'org.projectlombok', name: 'lombok', version: '1.18.10')
+    annotationProcessor(group: 'org.projectlombok', name: 'lombok', version: '1.18.10')
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-jetty', version: '2.2.1.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-mongodb', version: '2.2.1.RELEASE'
+    compile(group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.2.1.RELEASE') {
         exclude group: 'org.springframework.boot', module: 'spring-boot-starter-tomcat'
     }
-    compile(fdfs) {
+    compile(group: 'org.csource', name: 'fastdfs-client-java', version: '1.27-SNAPSHOT') {
         exclude group: 'org.slf4j', module: 'slf4j-log4j12'
     }
 
-    testImplementation(test_starter) {
+
+    testCompile(group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.2.1.RELEASE') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
 }

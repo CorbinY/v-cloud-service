@@ -1,16 +1,31 @@
+plugins {
+    id "org.springframework.boot"
+    id 'io.spring.dependency-management'
+    id 'java'
+}
+
+group 'org.corbin'
+version '1.0-SNAPSHOT'
+
+bootJar.enabled(true)
+jar.enabled(true)
+
+repositories {
+    mavenLocal()
+    maven { url "http://maven.aliyun.com/nexus/content/groups/public" }
+}
+
 dependencies {
     compile project(':basic-base')
-    implementation(boot_starter)
-    implementation(jpa_starter)
-    implementation(druid_starter)
-    implementation(google_guava)
-    compile(mysql_connector)
-    compile(fastjson)
-    compileOnly(lombok)
-    annotationProcessor(lombok)
-    implementation(security_starter, security_oauth2_autoconfigure)
-    compileOnly(jettt_starter)
-    compileOnly(web_starter) {
+    compile(group: 'org.springframework.boot', name: 'spring-boot-starter', version: '2.2.1.RELEASE')
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.2.1.RELEASE'
+    compile group: 'com.alibaba', name: 'druid-spring-boot-starter', version: '1.1.21'
+    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.18'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '2.2.1.RELEASE'
+    compile group: 'org.springframework.security.oauth.boot', name: 'spring-security-oauth2-autoconfigure', version: '2.2.1.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-jetty', version: '2.2.1.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-autoconfigure', version: '2.2.1.RELEASE'
+    compile(group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.2.1.RELEASE') {
         exclude group: 'org.springframework.boot', module: 'spring-boot-starter-tomcat'
     }
 }
