@@ -1,4 +1,4 @@
-package org.corbin.basic.base.jpa;
+package org.corbin.oauth.server.auth.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.domain.AuditorAware;

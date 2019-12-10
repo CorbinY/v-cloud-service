@@ -1,7 +1,8 @@
 plugins {
+    id 'java'
+    id "io.freefair.lombok"
     id "org.springframework.boot"
     id 'io.spring.dependency-management'
-    id 'java'
 }
 
 group 'org.corbin'
@@ -12,6 +13,8 @@ repositories {
     maven { url "http://maven.aliyun.com/nexus/content/groups/public" }
 }
 
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 /**
  * 解决 Execution failed for task ':gradle-core:bootJar 问题
  * 引入 jar.enabled = true,bootJar.enabled = false
@@ -23,8 +26,13 @@ jar.enabled(true)
 dependencies {
     compile group: 'com.alibaba', name: 'fastjson', version: '1.2.62'
     compile group: 'com.google.guava', name: 'guava', version: '28.1-jre'
-    compile(group: 'org.projectlombok', name: 'lombok', version: '1.18.10')
-    annotationProcessor(group: 'org.projectlombok', name: 'lombok', version: '1.18.10')
     compile(group: 'org.springframework.boot', name: 'spring-boot-starter-mail', version: '2.2.1.RELEASE')
-}
 
+
+    testCompile(group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.2.1.RELEASE') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+}
+test {
+    useJUnitPlatform()
+}

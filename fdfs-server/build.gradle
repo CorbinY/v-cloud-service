@@ -1,7 +1,8 @@
 plugins {
+    id 'java'
+    id "io.freefair.lombok"
     id "org.springframework.boot"
     id 'io.spring.dependency-management'
-    id 'java'
 }
 
 
@@ -29,14 +30,9 @@ configurations {
 }
 
 dependencies {
-
-    compile(group: 'org.springframework.boot', name: 'spring-boot-starter', version: '2.2.1.RELEASE')
-    compile group: 'org.springframework.boot', name: 'spring-boot-autoconfigure', version: '2.2.1.RELEASE'
-    compile group: 'com.google.guava', name: 'guava', version: '28.1-jre'
-    compile group: 'org.yaml', name: 'snakeyaml', version: '1.25'
-    compile group: 'com.alibaba', name: 'fastjson', version: '1.2.62'
-    compileOnly(group: 'org.projectlombok', name: 'lombok', version: '1.18.10')
-    annotationProcessor(group: 'org.projectlombok', name: 'lombok', version: '1.18.10')
+    compile project(':basic-base')
+    compileOnly group: 'org.yaml', name: 'snakeyaml', version: '1.25'
+    compileOnly(group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.2.1.RELEASE')
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-jetty', version: '2.2.1.RELEASE'
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-mongodb', version: '2.2.1.RELEASE'
     compile(group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.2.1.RELEASE') {

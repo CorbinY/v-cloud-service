@@ -21,18 +21,19 @@ import java.util.Date;
 @EntityListeners(AuditingEntityListener.class)
 public abstract class BaseEntity extends AbstractEntity implements Serializable {
 
-    @CreatedDate
-    @Column(nullable = false)
-    protected Date createDate;
+  @CreatedDate
+  @Column(nullable = false)
+  protected Date createDate;
 
-    @LastModifiedDate
-    @Column(nullable = false)
-    protected Date updateDate;
+  @LastModifiedDate
+  @Column(nullable = false)
+  protected Date updateDate;
 
-    @CreatedBy
-    protected String creator;
+  @CreatedBy
+  @Column(length = 25)
+  protected String creator;
 
-    @LastModifiedBy
-    protected String updator;
-
+  @LastModifiedBy
+  @Column(length = 25)
+  protected String updator;
 }

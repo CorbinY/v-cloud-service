@@ -20,7 +20,7 @@ public class LoginSuccessHander implements AuthenticationSuccessHandler {
   public void onAuthenticationSuccess(
       HttpServletRequest request, HttpServletResponse response, Authentication authentication)
       throws IOException, ServletException {
-    log.info("登录成功");
+    System.out.println("登录成功");
     response.getOutputStream().write("登录成功".getBytes());
   }
 }

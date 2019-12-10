@@ -1,2 +1,0 @@
-rootProject.name='aoauth-server'
-includeFlat('basic-base')

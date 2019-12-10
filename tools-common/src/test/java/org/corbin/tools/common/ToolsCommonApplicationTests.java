@@ -1,5 +1,7 @@
 package org.corbin.tools.common;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -7,5 +9,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 class ToolsCommonApplicationTests {
 
   @Test
-  void contextLoads() {}
+  public void ftgh() {
+    T t = new T();
+    t.setId("wdq");
+    System.out.println(t.getId());
+  }
 }

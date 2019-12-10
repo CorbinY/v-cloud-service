@@ -11,6 +11,8 @@ import org.springframework.lang.NonNull;
 public interface AccountService {
 
   /**
+   * 查找账户登录账号信息
+   *
    * @param emailOrTel 账户登录使用的邮箱或手机号
    * @author xiesu / Corbin
    * @date 19-12-5
