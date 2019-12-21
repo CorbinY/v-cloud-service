@@ -1,7 +1,7 @@
 package org.corbin.fdfs.server.controller;
 
-import org.corbin.fdfs.server.response.ResponseResult;
-import org.corbin.fdfs.server.response.ResponseStatusEnum;
+import org.corbin.basic.base.response.ResponseResult;
+import org.corbin.basic.base.response.ResponseStatusEnum;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;

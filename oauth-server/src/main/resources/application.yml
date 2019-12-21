@@ -37,6 +37,7 @@ spring:
         #无修改命名
         #physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     show-sql: true
+    #指定方言,使用innodb引擎,支持失误,默认的MyISAM不支持失误
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
 
 

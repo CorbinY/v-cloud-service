@@ -9,11 +9,12 @@ import java.util.Optional;
 
 /**
  * 实现jpa的审计功能
+ *
  * @author xiesu / Corbin
  * @version 1.0
  * @date 19-12-5
  */
-@Configuration
+//@Configuration
 public class Auditor implements AuditorAware<String> {
 
   /** 获取当前创建或修改的用户 */

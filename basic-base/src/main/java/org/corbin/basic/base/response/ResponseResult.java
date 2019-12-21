@@ -1,4 +1,4 @@
-package org.corbin.fdfs.server.response;
+package org.corbin.basic.base.response;
 
 import com.google.common.collect.Maps;
 import lombok.Getter;

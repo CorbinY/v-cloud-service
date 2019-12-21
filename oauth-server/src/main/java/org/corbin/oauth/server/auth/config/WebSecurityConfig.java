@@ -1,12 +1,13 @@
 package org.corbin.oauth.server.auth.config;
 
 import org.corbin.oauth.server.auth.handler.LoginFailureHandler;
-import org.corbin.oauth.server.auth.handler.LoginSuccessHander;
+import org.corbin.oauth.server.auth.handler.LoginSuccessHandler;
+import org.corbin.oauth.server.auth.service.LoginAuth;
 import org.corbin.oauth.server.entity.Account;
-import org.corbin.oauth.server.service.impl.AccountServiceImpl;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
@@ -15,23 +16,27 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
 /**
+ * Spring Security 安全配置 SpringSecurityConfig
+ *
  * @author xiesu / Corbin
  * @version 1.0
  * @date 19-12-6
  */
 @Configuration
+@EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
-  private final AccountServiceImpl accountService;
+  private final LoginAuth loginAuth;
 
-  public WebSecurityConfig(AccountServiceImpl accountService) {
-    this.accountService = accountService;
+  public WebSecurityConfig(LoginAuth loginAuth) {
+    this.loginAuth = loginAuth;
   }
 
   /**
@@ -64,11 +69,19 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
   protected void configure(HttpSecurity http) throws Exception {
     // 禁止跨域请求伪造
     http.csrf().disable();
+    // 配置前后端分离的登录的参数,url
+    http.formLogin()
+        .usernameParameter("account")
+        .passwordParameter("pwd")
+        .loginProcessingUrl("/login");
+
     // 认证成功/失败后的操作
-    http.formLogin().successHandler(new LoginSuccessHander());
+    http.formLogin().successHandler(new LoginSuccessHandler());
     http.formLogin().failureHandler(new LoginFailureHandler());
-    // 任何请求都要认证
-    http.authorizeRequests().anyRequest().fullyAuthenticated();
+    // 开启授权认证
+    http.authorizeRequests().anyRequest().authenticated();
+    // 配置token验证过滤器
+    http.addFilterBefore(new JWTAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
   }
 
   /**
@@ -78,15 +91,15 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
    * @param username 用户登录名,本案例中为用户的邮箱,手机号等
    */
   private UserDetails loadUserByUsername(String username) {
-    Account account = accountService.findLoginAccount(username);
+    Account account = loginAuth.loadAuthUserAccount(username);
     if (Objects.isNull(account)) {
       throw new UsernameNotFoundException("用户不存在");
     }
-
     // 此处为角色的设置
     List<SimpleGrantedAuthority> authorities = new ArrayList<>();
     // 返回的userDetails实现类中username为账户的唯一标识->accountId
-    return new User(account.getAccountId(), account.getMd5Pwd(), authorities);
+    //    return new User(account.getAccountId(), account.getMd5Pwd(), authorities);
+    return account;
   }
 
   /**

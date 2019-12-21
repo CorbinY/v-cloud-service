@@ -1,4 +1,4 @@
-package org.corbin.fdfs.server.response;
+package org.corbin.basic.base.response;
 
 /**
  * @author xiesu / Corbin

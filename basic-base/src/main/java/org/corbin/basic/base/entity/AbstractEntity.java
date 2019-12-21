@@ -2,9 +2,12 @@ package org.corbin.basic.base.entity;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.corbin.tools.common.util.SnowFlakeIdHelper;
+import org.corbin.tools.common.util.IdHelper;
 
-import javax.persistence.*;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
 
 /**
@@ -31,7 +34,7 @@ public abstract class AbstractEntity implements Serializable {
    * @date 19-12-5
    */
   public static Long createUniqueLongId() {
-    return SnowFlakeIdHelper.nextId2Long();
+    return IdHelper.nextLongSnowFlackId();
   }
 
   /**
@@ -43,6 +46,6 @@ public abstract class AbstractEntity implements Serializable {
    * @date 19-12-5
    */
   public static String createUniqueStringId() {
-    return SnowFlakeIdHelper.nextId2String();
+    return IdHelper.nextStringSnowFlackId();
   }
 }

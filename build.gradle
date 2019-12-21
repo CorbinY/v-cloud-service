@@ -8,3 +8,7 @@ plugins {
 group 'org.corbin'
 version '1.0-SNAPSHOT'
 
+dependencies {
+    implementation 'junit:junit:4.12'
+}
+

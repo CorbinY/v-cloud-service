@@ -25,6 +25,10 @@ public class IdHelper {
     return SequenceIdInstance.SEQUENCE_ID_UTIL.nextId();
   }
 
+  public static String nextRandomUniqueId() {
+    return RandomUniqueIdInstance.RANDOM_UNIQUE_ID_UTIL.nextId();
+  }
+
   private static class SnowFlakeUtilInstance {
     private static final SnowFlakeIdUtil SNOW_FLAKE = new SnowFlakeIdUtil(9, 5);
   }
@@ -35,5 +39,9 @@ public class IdHelper {
 
   private static class SequenceIdInstance {
     private static final SequenceIdUtil SEQUENCE_ID_UTIL = new SequenceIdUtil(9, 5);
+  }
+
+  private static class RandomUniqueIdInstance {
+    private static final RandomUniqueIdUtil RANDOM_UNIQUE_ID_UTIL = new RandomUniqueIdUtil();
   }
 }

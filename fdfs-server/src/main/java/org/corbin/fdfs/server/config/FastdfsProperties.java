@@ -8,7 +8,7 @@ import org.springframework.context.annotation.PropertySource;
 /** @author xiesu */
 @Configuration("fastdfsConfig")
 @Getter
-@PropertySource(value = "fastdfs-client.properties")
+@PropertySource(value = "classpath:fastdfs-client.properties")
 public class FastdfsProperties {
 
   @Value("${fastdfs.connect_timeout_in_seconds}")

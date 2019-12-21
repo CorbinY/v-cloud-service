@@ -20,8 +20,4 @@ public class AuthController {
     return new BCryptPasswordEncoder().encode(pwd);
   }
 
-  public static void main(String[] args) {
-    System.out.println("ssssssssssss");
-    System.out.println(new AuthController().testef());
-  }
 }

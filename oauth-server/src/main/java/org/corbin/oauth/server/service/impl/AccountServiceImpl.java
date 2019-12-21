@@ -23,22 +23,4 @@ public class AccountServiceImpl extends BaseServiceImpl<Account, Long> implement
     super(accountRepository);
     this.accountRepository = accountRepository;
   }
-
-  @Override
-  public Account findLoginAccount(@NonNull String emailOrTel) {
-    Assert.notNull(emailOrTel, "登录账号不能为空");
-    boolean isMail = PatternUtil.isMail(emailOrTel);
-    // 邮箱登录
-    if (isMail) {
-      return accountRepository.findByAccountMail(emailOrTel).orElse(null);
-    }
-
-    // 手机号登录
-    boolean isTel = PatternUtil.isTel(emailOrTel);
-    if (isTel) {
-      return accountRepository.findByAccountTel(emailOrTel).orElse(null);
-    }
-    // 其他方式不支持
-    return null;
-  }
 }
