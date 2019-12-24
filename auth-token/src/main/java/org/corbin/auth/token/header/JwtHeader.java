@@ -1,13 +1,8 @@
-package org.corbin.oauth.server.auth.model.token.bean;
+package org.corbin.auth.token.header;
 
 import com.alibaba.fastjson.annotation.JSONField;
 import com.auth0.jwt.algorithms.Algorithm;
 import lombok.Getter;
-import lombok.Setter;
-import org.corbin.oauth.server.auth.config.ECDSA256KeyStoreInit;
-import org.corbin.tools.common.context.SpringBeanContextAware;
-import org.corbin.tools.common.util.IdHelper;
-import org.springframework.context.annotation.Bean;
 import org.springframework.core.io.ClassPathResource;
 
 import java.io.IOException;

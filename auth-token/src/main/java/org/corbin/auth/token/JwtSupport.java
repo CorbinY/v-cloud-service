@@ -1,4 +1,4 @@
-package org.corbin.oauth.server.auth.model.token;
+package org.corbin.auth.token;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
@@ -7,15 +7,13 @@ import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.impl.PublicClaims;
 import com.auth0.jwt.interfaces.DecodedJWT;
 import lombok.extern.slf4j.Slf4j;
-import org.corbin.oauth.server.auth.model.token.bean.AbstractTokenPayload;
-import org.corbin.oauth.server.auth.model.token.bean.JwtHeader;
+import org.corbin.auth.token.payload.AbstractTokenPayload;
+import org.corbin.auth.token.header.JwtHeader;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 import java.util.Map;
 import java.util.Objects;
-
-import static org.apache.commons.codec.binary.Base64.encodeBase64URLSafeString;
 
 /**
  * // // public static void main(String[] args) // throws NoSuchAlgorithmException,
@@ -122,20 +120,20 @@ public class JwtSupport {
    * @date 19-12-19
    */
   public static AbstractTokenPayload decodeLegalTokenPayload(String token) {
-    System.out.println("token");
-    System.out.println(token);
+    //    System.out.println("token");
+    //    System.out.println(token);
 
     DecodedJWT decodedjwt = verifier(token);
     String payload = decodedjwt.getPayload();
-
-    System.out.println("payload");
-    System.out.println(payload);
+    //
+    //    System.out.println("payload");
+    //    System.out.println(payload);
 
     byte[] payloadByte = Base64.getUrlDecoder().decode(payload);
     String payloadJsonString = new String(payloadByte);
-
-    System.out.println("payloadJsonString");
-    System.out.println(payloadJsonString);
+    //
+    //    System.out.println("payloadJsonString");
+    //    System.out.println(payloadJsonString);
 
     return JSON.parseObject(payloadJsonString, AbstractTokenPayload.class);
   }

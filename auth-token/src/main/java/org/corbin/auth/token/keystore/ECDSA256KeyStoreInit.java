@@ -1,4 +1,4 @@
-package org.corbin.oauth.server.auth.config;
+package org.corbin.auth.token.keystore;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -60,7 +60,7 @@ public class ECDSA256KeyStoreInit {
     ObjectOutputStream pubOut =
         new ObjectOutputStream(
             new FileOutputStream(
-                new File("oauth-server/src/main/resources/ECDSA256_PUB_KEY.keystore")));
+                new File("auth-token/src/main/resources/ECDSA256_PUB_KEY.keystore")));
     pubOut.writeObject(ecPublicKey);
     pubOut.flush();
     pubOut.close();
@@ -68,7 +68,7 @@ public class ECDSA256KeyStoreInit {
     ObjectOutputStream priOut =
         new ObjectOutputStream(
             new FileOutputStream(
-                new File("oauth-server/src/main/resources/ECDSA256_PRI_KEY.keystore")));
+                new File("auth-token/src/main/resources/ECDSA256_PRI_KEY.keystore")));
     priOut.writeObject(ecPrivateKey);
     priOut.flush();
     priOut.close();

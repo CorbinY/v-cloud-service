@@ -1,4 +1,4 @@
-package org.corbin.oauth.server.auth.model.token.bean;
+package org.corbin.auth.token.payload;
 
 import com.alibaba.fastjson.annotation.JSONField;
 import lombok.Getter;

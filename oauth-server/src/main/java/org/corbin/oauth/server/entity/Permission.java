@@ -2,8 +2,6 @@ package org.corbin.oauth.server.entity;
 
 import org.corbin.basic.base.entity.BaseEntity;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
 import java.io.Serializable;
 
 /**

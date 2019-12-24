@@ -1,8 +1,7 @@
-package org.corbin.oauth.server.auth.model.token.bean;
+package org.corbin.auth.token.payload;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.corbin.oauth.server.auth.model.token.bean.AbstractTokenPayload;
 import org.corbin.tools.common.util.IdHelper;
 
 /**

@@ -2,7 +2,6 @@ package org.corbin.oauth.server.auth.handler;
 
 import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
-import org.corbin.oauth.server.auth.model.token.JwtSupport;
 import org.corbin.oauth.server.auth.model.token.bean.AccessTokenPayload;
 import org.corbin.oauth.server.auth.model.token.bean.JwtHeader;
 import org.springframework.security.core.Authentication;
@@ -11,9 +10,6 @@ import org.springframework.security.web.authentication.AuthenticationSuccessHand
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
-import java.util.Date;
 
 /**
  * 设置用户第一次使用用户名密码登陆成功后执行的内容<br>

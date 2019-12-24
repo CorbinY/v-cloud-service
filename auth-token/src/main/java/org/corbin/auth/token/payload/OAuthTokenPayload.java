@@ -1,4 +1,4 @@
-package org.corbin.oauth.server.auth.model.token.bean;
+package org.corbin.auth.token.payload;
 
 /**
  * 授权第三方平台使用本平台账号登录时生成的token

@@ -1,15 +1,12 @@
 package org.corbin.oauth.server.auth.config;
 
-import com.alibaba.fastjson.JSON;
-import com.auth0.jwt.interfaces.DecodedJWT;
 import com.google.common.collect.Lists;
-import org.corbin.oauth.server.auth.model.token.JwtSupport;
-import org.corbin.oauth.server.auth.model.token.bean.AbstractTokenPayload;
+import org.corbin.auth.token.JwtSupport;
+import org.corbin.auth.token.payload.AbstractTokenPayload;
 import org.corbin.oauth.server.entity.Account;
 import org.corbin.oauth.server.entity.Role;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.web.filter.GenericFilterBean;
 
 import javax.servlet.FilterChain;
@@ -18,9 +15,10 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
+/**
+ * @author xiesu
+ */
 public class JWTAuthenticationFilter extends GenericFilterBean {
 
   @Override
