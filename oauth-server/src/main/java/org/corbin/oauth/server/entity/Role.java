@@ -1,5 +1,7 @@
 package org.corbin.oauth.server.entity;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.corbin.basic.base.entity.BaseEntity;
 import org.springframework.security.core.GrantedAuthority;
 
@@ -13,9 +15,11 @@ import java.util.List;
  * @version 1.0
  * @date 19-12-19
  */
+@Getter
+@Setter
 @Entity
 @Table(name = "role_info")
-public class Role extends BaseEntity implements GrantedAuthority, Serializable {
+public class Role extends BaseEntity implements Serializable {
 
   @Column(name = "role_id")
   private Integer roleId;
@@ -25,29 +29,4 @@ public class Role extends BaseEntity implements GrantedAuthority, Serializable {
 
   @ManyToMany(mappedBy = "authorities", fetch = FetchType.LAZY)
   private List<Account> accounts = new ArrayList<>();
-
-  public Integer getRoleId() {
-    return roleId;
-  }
-
-  public void setRoleId(Integer roleId) {
-    this.roleId = roleId;
-  }
-
-  @Override
-  public String getAuthority() {
-    return authority;
-  }
-
-  public void setAuthority(String authority) {
-    this.authority = authority;
-  }
-
-  public List<Account> getAccounts() {
-    return accounts;
-  }
-
-  public void setAccounts(List<Account> accounts) {
-    this.accounts = accounts;
-  }
 }

@@ -115,26 +115,17 @@ public class JwtSupport {
   /**
    * 获取合法的token的有效信息负载(已校验token的合法性)
    *
-   * @param token
+   * @param token token
    * @author xiesu / Corbin
    * @date 19-12-19
    */
-  public static AbstractTokenPayload decodeLegalTokenPayload(String token) {
-    //    System.out.println("token");
-    //    System.out.println(token);
-
+  public static JSONObject decodeLegalTokenPayload(String token) {
     DecodedJWT decodedjwt = verifier(token);
     String payload = decodedjwt.getPayload();
-    //
-    //    System.out.println("payload");
-    //    System.out.println(payload);
 
     byte[] payloadByte = Base64.getUrlDecoder().decode(payload);
     String payloadJsonString = new String(payloadByte);
-    //
-    //    System.out.println("payloadJsonString");
-    //    System.out.println(payloadJsonString);
 
-    return JSON.parseObject(payloadJsonString, AbstractTokenPayload.class);
+    return JSON.parseObject(payloadJsonString);
   }
 }

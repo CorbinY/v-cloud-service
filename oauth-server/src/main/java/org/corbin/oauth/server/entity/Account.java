@@ -3,7 +3,6 @@ package org.corbin.oauth.server.entity;
 import lombok.Getter;
 import lombok.Setter;
 import org.corbin.basic.base.entity.BaseEntity;
-import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -25,7 +24,7 @@ import java.util.List;
       @Index(columnList = "account_mail", unique = true),
       @Index(columnList = "account_tel", unique = true)
     })
-public class Account extends BaseEntity implements UserDetails, Serializable {
+public class Account extends BaseEntity implements Serializable {
 
   /** 账号id */
   @Column(name = "account_id", unique = true, length = 25)
@@ -47,40 +46,10 @@ public class Account extends BaseEntity implements UserDetails, Serializable {
   protected String assistVerificationMail;
 
   /** 角色列表 */
-  @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.MERGE)
+  @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
   @JoinTable(
       name = "account_role",
       inverseJoinColumns = {@JoinColumn(name = "role_id", referencedColumnName = "role_id")},
       joinColumns = {@JoinColumn(name = "account_id", referencedColumnName = "account_id")})
   private List<Role> authorities = new ArrayList<>();
-
-  @Override
-  public String getPassword() {
-    return md5Pwd;
-  }
-
-  @Override
-  public String getUsername() {
-    return accountId;
-  }
-
-  @Override
-  public boolean isAccountNonExpired() {
-    return true;
-  }
-
-  @Override
-  public boolean isAccountNonLocked() {
-    return true;
-  }
-
-  @Override
-  public boolean isCredentialsNonExpired() {
-    return true;
-  }
-
-  @Override
-  public boolean isEnabled() {
-    return true;
-  }
 }
